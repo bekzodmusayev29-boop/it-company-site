@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+header.scrolled {
+  background: #0a3cff;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  margin-left: 80px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #0a3cff;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.light {
+  background: white;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* PRICING */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.price {
+  background: white;
+  padding: 35px;
+  width: 250px;
+  border-radius: 12px;
+}
+
+.featured {
+  border: 3px solid #0a3cff;
+}
+
+/* CONTACT */
+form input, form textarea {
+  width: 300px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+form button {
+  padding: 12px 30px;
+  background: #0a3cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* TELEGRAM */
+.telegram {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #229ED9;
+  color: white;
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.hero {
+  background: url("https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg");
+}
