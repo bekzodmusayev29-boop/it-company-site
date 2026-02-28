@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: kitobxon_bot
+    restart: always
+    volumes:
+      - ./kitobxon_pro.db:/app/kitobxon_pro.db
+      - ./downloads:/app/downloads
+      - ./bot_history.log:/app/bot_history.log
+    environment:
+      - BOT_TOKEN=7760779089:AAE0tNnv-d7wWjuxaC2zEzhH4XN14800w7E
+      - ADMIN_ID=6361665798
